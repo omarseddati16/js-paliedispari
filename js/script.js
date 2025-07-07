@@ -1,11 +1,19 @@
 // Palidroma
+let ask = prompt('immetti una parola ')
 function palidroma(text) {
-  let ask = prompt('immetti una parola ')
-  const reversedwords = ask.split('').reverse().join('');
-  if (ask === reversedwords) {
-    console.log('la parola è palidroma')
-  }
-  else {
-    console.log('la parola non è palidroma')
-  }
+  const reversedwords = text.split('').reverse().join('');
+  return reversedwords
 }
+
+const reversedask = palidroma(ask);
+const cleanedask = ask.toLowerCase();
+
+if (cleanedask === reversedask) {
+  console.log('la parola è palidroma')
+}
+else {
+  console.log('la parola non è palidroma')
+}
+
+
+
