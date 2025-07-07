@@ -15,5 +15,18 @@ else {
   console.log('la parola non è palidroma')
 }
 
+// Pari o dispari 
+
+function randomnumbers(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+const choice = prompt('scegliere pari o dispari')
+const giocatore = randomnumbers(1, 5);
+console.log(`giocatore numero ${giocatore}`);
+const computer = randomnumbers(1, 5);
+console.log(`computer numero ${computer}`);
+
+sum = giocatore + computer
+console.log(`La somma dei numeri è: ${sum}`);
 
 
