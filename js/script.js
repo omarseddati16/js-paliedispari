@@ -27,6 +27,27 @@ const computer = randomnumbers(1, 5);
 console.log(`computer numero ${computer}`);
 
 sum = giocatore + computer
-console.log(`La somma dei numeri è: ${sum}`);
+console.log(`somma dei numeri ${sum}`);
+
+function even(num) {
+  return num % 2 === 0;
+}
+
+const totalsum = even(sum)
+let result;
+if (totalsum) {
+  let result = 'pari';
+  console.log('pari');
+}
+else {
+  let result = 'dispari';
+  console.log('dispari');
+}
+
+if (giocatore === result) {
+  console.log('hai vinto');
+} else {
+  console.log('hai perso');
+}
 
 
