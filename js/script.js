@@ -1,5 +1,5 @@
 // Palidroma
-let ask = prompt('immetti una parola ')
+let ask = prompt('immetti una parola')
 function palidroma(text) {
   const reversedwords = text.split('').reverse().join('');
   return reversedwords
@@ -36,15 +36,15 @@ function even(num) {
 const totalsum = even(sum)
 let result;
 if (totalsum) {
-  let result = 'pari';
+  result = 'pari';
   console.log('pari');
 }
 else {
-  let result = 'dispari';
+  result = 'dispari';
   console.log('dispari');
 }
 
-if (giocatore === result) {
+if (choice === result) {
   console.log('hai vinto');
 } else {
   console.log('hai perso');
